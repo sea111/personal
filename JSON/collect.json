@@ -1,0 +1,20 @@
+{
+	"data":[
+		{
+            "day":"3",
+            "brandName":"槽王开槽机",
+            "model":"JJZT(Y)-39-38W", 
+            "iconUrl":"http://image.wpwl.org:80/uploadfile/1114/20160717/new/1468769470439-461c3cc018c34180ab70c83eb18cc5bc.jpg",
+            "id":30,
+            "orgId":35
+        },{
+            "day":"1",
+            "brandName":"集成灶",
+            "model":"KKKIIBS-21-12", 
+            "iconUrl":"http://image.wpwl.org:80/uploadfile/1114/20160717/new/1468769470439-461c3cc018c34180ab70c83eb18cc5bc.jpg",
+            "id":30,
+            "orgId":35
+        }
+	],
+    "success":true
+}

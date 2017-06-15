@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="format-detection" content="telephone=no" />			
+		<title>正品控</title>
+	</head>
+	<style>
+		body, div, dl, dt, dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td,select,img{margin:0;padding:0;}
+		a{text-decoration:none;}
+		ul,li{list-style:none;}
+		b,strong{font-weight:normal;}
+		i,em{font-style:normal;}
+		html,body{
+			width:100%;
+			height:100%;
+			/*overflow:hidden;*/
+		}
+		#box{
+			width:100%;
+			height:100%;
+			margin:0 auto;
+		}
+		.top{
+			width:100%;
+			height:0.88rem;
+			line-height:0.88rem;
+			background:#333;
+			position:fixed;
+			top:0;
+			left:0;
+			z-index:3;
+		}
+		.bg-icon{
+			display:block;
+			background:url(images/back-icon.png) no-repeat;
+			background-size:100% 100%;
+			width:0.64rem;
+			height:0.64rem;
+			position:absolute;
+			left:0.1rem;
+			top:0.1rem;
+			-webkit-tap-highlight-color:rgba(255,0,0,0);
+		}
+		.top div{
+			width:100%;
+			height:0.88rem;
+			line-height:0.88rem;
+			font-size:0.36rem;
+			color:#fff;
+			text-align:center;	
+		}
+		#content{
+			width:100%;
+			height:100%;
+			position:relative;
+			top:0.88rem;
+		}
+		.picture{
+			margin-top:-0.3rem;
+			height:1.56rem;
+			position:relative;
+		}
+		.pic{
+			display:inline-block;
+			/*width:0.74rem;
+			height:0.74rem;				
+			background:url(images/zpk-icon.png) no-repeat;
+			background-size:100% 100%;*/
+			width:0.78rem;
+			height:0.78rem;	
+			background:url(images/share-sprite.png) no-repeat;
+			background-position:-0.78rem 0rem;		
+			background-size:1.56rem 0.78rem;
+			position:absolute;
+			left:0;
+			right:0;
+			margin:0.6rem auto;
+		}
+		p.control{
+			font-size:0.32rem;
+			color:#333;
+			text-align:center;
+			/*margin-top:0.3rem;*/
+			margin-bottom:0.4rem;
+		}
+		p.artical{
+			margin:0 0.68rem;
+			font-size:0.26rem;
+			color:#656565;
+			line-height:0.5rem;
+			text-align:center;
+			margin-bottom:0.36rem;
+		}
+		.sale-before,.find-some,.cheaper,.collection,.more-question{
+			width:100%;
+			border-top:1px solid #ccc;
+		}
+		em{color:#d6a41d;}
+		.sale,.something,.cheap,.collect,.question{
+			margin-bottom:0.16rem;
+			font-size:0.30rem;
+			color:#343434;
+			margin-top:0.38rem;
+			margin-left:0.2rem;
+			font-weight:500;
+		}
+		.salebefore,.good-life,.fast,.like{
+			font-size:0.26rem;
+			color:#666;
+			line-height:0.48rem;
+			margin:0 0.21rem;
+			margin-bottom:0.16rem;
+		}
+		.welcome{
+			font-size:0.26rem;
+			color:#666;
+			line-height:0.48rem;
+			margin-left:0.21rem;
+		}
+		/*--------------------loading加载------------------------*/
+		.loading{
+			width:100%;
+			position:absolute;
+			height:100%;
+			display:none;
+			z-index:99;
+			left:0;
+			top:0.88rem;
+			font-size:0.3rem;
+		}
+		.loading .middle{
+			width:100%;
+			position:absolute;
+			height:6rem;
+			text-align:center;
+			left:0;
+			top:0;
+			bottom:0;
+			right:0;
+			margin:auto;
+		}
+		.middle img{
+			width:2.1rem;
+			margin:0 auto;
+			margin-bottom:0.3rem;
+			display:block;
+		}
+		#wpReload{
+			color:#0AA1F8;
+		}
+	</style>
+	<script>
+		document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + "px";
+		window.addEventListener("resize",function(){
+			document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + "px";
+		},false);		
+	</script>
+	<body>
+		<div id="box">
+			<!--star 头部标题-->
+			<div class="top">
+				<a href="javascript:;" class="bg-icon" id="back" onclick="window.history.go(-1)"></a>
+				<div>关于正品控</div>
+			</div>
+			<!--end 头部标题-->
+			<!--star 内容介绍正品控-->
+			<div id="content">
+				<div class="contents">
+					<div class="picture">
+						<i class="pic"></i>
+					</div>
+					<p class="control">正品控</p>
+					<p class="artical">专注于发现正品好货，与大家一起将高品质的好货传递给更多的人，拥有正品控，拥有生活。</p>
+					<div class="sale-before">
+						<p class="sale"><em>[</em>售前验<em>]</em></p>
+						<p class="salebefore">售前验，让在意生活品质的你扫一扫，放心购物。</p>
+					</div>
+					<div class="find-some">
+						<p class="something"><em>[</em>发现高品质的好东西<em>]</em></p>
+						<p class="good-life">生活的品质，应是无数个衣食住行细节的堆积，更不简单的只靠价格去提升。[正品控]希望从浩如烟海的假冒商品中，找到真正能够提高生活品质，买到安心的那一款。</p>
+					</div>
+					<div class="cheaper">
+						<p class="cheap"><em>[</em>超优惠抢购<em>]</em></p>
+						<p class="fast">正品好货迅速抢购，8折？就是让要你忍不住剁手！</p>
+					</div>
+					<div class="collection">
+						<p class="collect"><em>[</em>云收藏<em>]</em></p>
+						<p class="like">你还可以将所有喜欢的商品收藏起来，永不丢失，随时查看，让[正品控]成为你生活的正品工具书</p>
+					</div>
+					<div class="more-question">
+						<p class="question"><em>[</em>更多问题及意见反馈<em>]</em></p>
+						<p class="welcome">欢迎关注我们的微信公众号：zhengpinkong</p>
+						<p class="welcome">我们的网站是：www.wopuwulian.com</p>
+						<p class="welcome">意见反馈至：service@wopuwulian.com</p>
+					</div>
+				</div>
+			</div>
+			<!--end 内容介绍正品控-->
+			<!--star 异常处理-->
+			<div class="loading">
+				<div class="middle"><img src="images/scan_net.png" />
+					<p>网络异常，点击
+						<a href="javascript:;" id="wpReload">重新加载</a>
+					</p>
+				</div>
+			</div>
+			<!--end 异常处理-->
+		</div>
+	</body>
+</html>

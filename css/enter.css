@@ -1,0 +1,239 @@
+/* reset */
+body, div, dl, dt, dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td,select,img{ margin: 0; padding:0;}
+a{text-decoration:none;}
+ul,li{list-style: none;}
+b,strong{font-weight: normal;}
+i,em{font-style: normal;}
+.l{float:left;}
+.r{float:right;}
+html,body{
+	width:100%;
+	height:100%;
+	overflow:hidden;
+}
+#box{
+	width:100%;
+	height:100%;
+	margin:0 auto;
+	position:relative;
+}
+.top{
+	width:100%;
+	height:0.88rem;
+	background:#333333;
+	position:relative;
+}
+.bg-icon{
+	display:inline-block;
+	width:0.64rem;
+	height:0.64rem;
+	position:absolute;
+    background:url(../images/load-sprite.png) no-repeat;
+    background-size:1.92rem 0.64rem;   	
+    -webkit-tap-highlight-color:rgba(255,0,0,0);
+}
+#back{
+	background-position:0 0;
+	left:0.1rem;
+    top:0.1rem;
+}
+.telephone{
+	background-position:-0.64rem 0;
+	left:0.2rem;
+    top:0.65rem;
+}
+.inp{
+	background-position:-1.28rem 0;
+	left:0.2rem;
+    top:0.65rem;
+}
+.top div{
+	width:100%;
+	height:0.88rem;
+	line-height:0.88rem;
+	font-size:0.36rem;
+	color:#fff;
+	text-align:center;	
+}
+#content{
+	width:100%;
+	margin:0 auto;
+}
+.common{
+	margin:auto;
+	height:1.32rem;
+	width:6.41rem;
+	border-bottom:1px solid #ccc;
+	position:relative;
+}
+.commons{
+	outline:none;
+	border:none;
+	font-size:0.24rem;
+	color:#999;
+	margin-top:0.84rem;
+	margin-left:0.82rem;
+	-webkit-appearance:none;
+}
+.verify-login{
+	border-radius:12px;
+	background:#ccc;
+	color:#fff;
+}
+.verify{
+	width:1.38rem;
+	height:0.78rem;
+	font-size:0.3rem;
+	border:none;
+	margin-top:0.56rem;
+    position:absolute;
+    right:0rem;
+    outline:none;
+    -webkit-appearance:none;
+}
+.agreement{
+	width:100%;
+	margin-top:0.4rem;
+	font-size:0.24rem;
+	color:#999;
+	text-align:center;
+}
+.agree{
+	color:#068ff9;
+}
+.login{
+	margin:auto;
+	width:6.14rem;
+	height:1rem;
+	line-height:1rem;
+	font-size:0.34rem;
+	margin-top:2rem;
+	text-align:center;
+}
+.account-number{
+	margin:0.28rem auto;
+    padding:0 8%;
+    box-sizing:border-box;
+}
+.com-line{
+	display:inline-block;
+    width:1.8rem;
+    height:2px;
+    line-height:2px;
+    border-top:1px solid #ccc;
+    float:left;
+}
+.use-account-number{
+	display:inline-block;
+    font-size:0.24rem;
+    color:#666;
+    float:left;
+    margin:-0.1rem 0.2rem;
+}
+.WeChart-sign{
+	margin:1rem auto;
+	width:1.12rem;
+	height:1.12rem;
+	background:url(../images/WeChart-sign.png) no-repeat;
+	background-size:100% 100%;
+}
+/*--------------------loading加载------------------------*/
+.loading{
+	width:100%;
+	position:absolute;
+	height:100%;
+	display:none;
+	z-index:99;
+	left:0;
+	top:0.88rem;
+	font-size:0.3rem;
+}
+.loading .middle{
+	width:100%;
+	position:absolute;
+	height:6rem;
+	text-align:center;
+	left:0;
+	top:0;
+	bottom:0;
+	right:0;
+	margin:auto;
+}
+.middle img{
+	width:2.1rem;
+	margin:0 auto;
+	margin-bottom:0.3rem;
+	display:block;
+}
+#wpReload{
+	color:#0AA1F8;
+}
+/*====================弹框======================*/
+#smark{
+	position:absolute;
+	z-index:3;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background:#000;
+	opacity:0.4;
+	display:none;
+}
+#modal{
+	width:6.2rem;
+	height:2.56rem;
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	right:0;
+	margin:auto;
+	display:none;
+	z-index:5;
+	background:#fff;
+	border-radius:0.18rem;
+}
+#modal .artile{
+	width:6.20rem;
+	height:1.64rem;
+	border-bottom:1px solid #ccc;
+}
+#modal .artile{
+	box-sizing:border-box;
+	color:#333;
+	text-align:center;
+	font-size:0.34rem;
+	font-weight:bold;
+	padding-top:0.64rem;
+	padding-bottom:0.3rem;
+}
+#modal .artile .wifi{
+	box-sizing:border-box;
+	color:#333;
+	font-size:0.32rem;
+	padding:0 0.45rem;
+}
+#modal .and{
+	width:6.2rem;
+	height:0.92rem;
+}
+.add-same{
+	display:block;
+	height:0.92rem;
+	line-height:0.92rem;
+	font-size:0.34rem;
+	color:#007aff;
+	text-align:center;
+}
+#cancle{
+	width:50%;
+	float:left;
+	border-right:1px solid #b2b2b2;
+	-webkit-tap-highlight-color:rgba(255,0,0,0);
+}
+#sure{
+	width:49%;
+	float:left;
+	-webkit-tap-highlight-color:rgba(255,0,0,0);
+}

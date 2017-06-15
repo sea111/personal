@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="format-detection" content="telephone=no" />					
+		<title>正品控-我的消息</title>
+	</head>
+	<link rel="stylesheet" href="css/myNews.css" />
+	<script type="text/javascript">
+		document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + "px";
+		window.addEventListener("resize",function(){
+			document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + "px";
+		},false);
+	</script>
+	<body>
+		<div id="box">
+			<div class="top">
+				<a href="javascript:;"class="bg-icon back" id="back"></a>
+				<div>我的消息</div>
+			</div>
+			<div id="content">
+				<dl class="feedback">
+					<dt class="picture-left">
+						<i class="bg-icon consult-feedback"></i>
+					</dt>
+					<dd class="cont-right">
+						<div class="cont">
+							<p class="com-cont consult">咨询反馈</p>
+							<p class="reply">企业答复 你的问题我们已经收到，会尽快安排</p>
+						</div>
+						<i class="bg-icon arrows"></i>
+					</dd>
+				</dl>
+				<dl class="feedback">
+					<dt class="picture-left">
+						<i class="bg-icon buy"></i>
+					</dt>		
+					<dd class="cont-right">
+						<div class="cont">
+							<p class="com-cont sure">你有一条购买确认</p>
+						</div>
+						<i class="bg-icon arrows"></i>
+					</dd>
+				</dl>
+				<dl class="feedback">
+					<dt class="picture-left">
+						<i class="bg-icon mess-push"></i>
+					</dt>		
+					<dd class="cont-right">
+						<div class="cont">
+							<p class="com-cont notification">你有一条消息推送</p>
+							<p class="reply">美年达免费送啦，即日起只要你口渴，进店</p>
+						</div>
+						<i class="bg-icon arrows"></i>
+					</dd>
+				</dl>
+				<dl class="feedback">
+					<dt class="picture-left">
+						<i class="bg-icon mess-type"></i>
+					</dt>		
+					<dd class="cont-right">
+						<div class="cont">
+							<p class="com-cont message-type">未知消息类型</p>
+							<p class="reply">暂不支持该消息,请更正正品控版本进行查看。</p>
+						</div>
+						<i class="bg-icon arrows"></i>
+					</dd>
+				</dl>
+			</div>
+			<div class="loading">
+				<div class="middle"><img src="images/scan_net.png" />
+					<p>网络异常，点击
+						<a href="javascript:;" id="wpReload">重新加载</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="lib/jquery-2.1.0.min.js" ></script>
+	<script type="text/javascript" src="lib/wpCommon.js" ></script>
+	<script type="text/javascript" src="lib/iscroll.js" ></script>
+</html>

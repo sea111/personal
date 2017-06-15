@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="format-detection" content="telephone=no" />			
+		<title>正品控-登录个人中心</title>
+	</head>
+	<link rel="stylesheet" href="css/enterPersonal.css" />
+	<script type="text/javascript">
+		document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + "px";
+		window.addEventListener("resize",function(){
+			document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + "px";
+		},false);
+	</script>
+	<body>
+		<div id="box">
+			<!--star 头部标题-->
+			<div id="head">
+				<div class="top">
+					<a href="javascript:;" class="bg-icon back" id="back" onclick="window.history.go(-1)"></a>
+					<div>个人中心</div>
+					<a href="javascript:;" class="bg-icon message"></a>
+				</div>
+				<div class="icons"></div>
+				<div class="phone">
+					<a class="phonenumer">15712341234</a>
+				</div>
+			</div>
+			<!--end 头部标题-->
+			<!--star 列表-->
+			<div id="content">
+				<ul>
+					<li class="cont Activity">
+						<i class="bg-icon location active"></i>
+						<span class="com-cont">活动中心</span>
+						<i class="bg-icon right"></i>
+					</li>
+					<li class="cont countCoupon">
+						<i class="bg-icon location coupon"></i>
+						<span class="com-cont">我的优惠券</span>
+						<i class="bg-icon right"></i>
+					</li>
+					<li class="cont Hide">
+						<i class="bg-icon location heart"></i>
+						<span class="com-cont">我的收藏</span>
+						<i class="bg-icon right"></i>
+					</li>
+					<!--<li class="cont Advice">
+						<i class="bg-icon location advice"></i>
+						<span class="com-cont">意见反馈</span>
+						<i class="bg-icon right"></i>
+					</li>-->
+					<li class="cont Fighting">
+						<i class="bg-icon location smile"></i>
+						<span class="com-cont">鼓励一下</span>
+						<i class="bg-icon right"></i>
+					</li>
+					<li class="cont Recommend">
+						<i class="bg-icon location friend"></i>
+						<span class="com-cont">推荐给朋友</span>
+						<i class="bg-icon right"></i>
+					</li>
+					<!--<li class="cont About">
+						<i class="bg-icon location about"></i>
+						<span class="com-cont">关于正品控</span>
+						<i class="bg-icon right"></i>
+					</li>-->
+					<li class="cont Set">
+						<i class="bg-icon location set"></i>
+						<span class="com-cont">设置</span>
+						<i class="bg-icon right"></i>
+					</li>
+				</ul>
+			</div>
+			<!--end 列表-->
+			<!--star/end 遮罩-->
+			<div id="smark"></div>
+			<!--star/end 退出登录-->
+			<div class="foot">
+				<input class="return" type="button" value="退出登录"/>
+				<input class="cancle" type="button" value="取消"/>
+			</div>
+			<!--<div class="share">
+				<div class="weChart"><i class="same wx"></i><p class="word">微信</p></div>
+				<div class="Friend"><i class="same circleFriend"></i><p class="word">朋友圈</p></div>
+				<div class="Link"><i class="same link"></i><p class="word">复制链接</p></div>
+				<div class="Elipsis"><i class="same ellipsis"></i><p class="word">更多</p></div>
+			</div>-->
+			<!--star 鼓励弹窗-->
+			<div class="encourage">
+				<i class="plate"></i>
+				<span class="like-online on-line">\\新版本上线\\</span>
+				<span class="like-online like">给苦逼的工程师点个赞吧!</span>
+				<div class="pop-up">
+					<span class="gray-blue pop-gray">冷漠无视</span>
+					<span class="gray-blue pop-blue">鼓励一下</span>
+				</div>
+			</div>
+			<!--end 鼓励弹窗-->
+			<!--star 异常-->
+			<div class="loading">
+				<div class="middle"><img src="images/scan_net.png" />
+					<p>网络异常，点击
+						<a href="javascript:;" id="wpReload">重新加载</a>
+					</p>
+				</div>
+			</div>
+			<!--end 异常-->
+		</div>
+	</body>
+	<script type="text/javascript" src="lib/jquery-2.1.0.min.js" ></script>
+	<script type="text/javascript" src="lib/wpCommon.js" ></script>
+	<script type="text/javascript" src="js/enterPersonal.js" ></script>
+</html>

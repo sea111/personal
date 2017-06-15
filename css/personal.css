@@ -1,0 +1,295 @@
+/* reset */
+body, div, dl, dt, dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td,select,img{ margin: 0; padding:0;}
+a{text-decoration:none;}
+ul,li{list-style: none;}
+b,strong{font-weight: normal;}
+i,em{font-style: normal;}
+.l{float:left;}
+.r{float:right;}
+html,body{
+	width:100%;
+	height:100%;
+	overflow:hidden;
+}
+#box{
+	width:100%;
+	height:100%;
+	margin:0 auto;
+	display:block;
+	position:relative;
+}
+#head{
+	width:100%;
+	background:#333333;
+	/*height:5rem;*/
+	height:4.6rem;
+}
+.top{
+	width:100%;
+	height:0.88rem;
+	position:relative;
+}
+.bg-icon{
+	display:block;
+	background:url(../images/personal-sprite.png) no-repeat;
+	background-size:7.04rem 0.64rem;
+	width:0.64rem;
+	height:0.64rem;
+	position:absolute;	
+	-webkit-tap-highlight-color:rgba(255,0,0,0);
+}
+.back{
+	top:0.1rem;
+	left:0.1rem;
+	background-position:0 0;	
+}
+.top div{
+	width:100%;
+	height:0.88rem;
+	line-height:0.88rem;
+	font-size:0.36rem;
+	color:#fff;
+	text-align:center;	
+}
+.message{
+	top:0.1rem;
+	right:0.1rem;	
+	background-position:-0.64rem 0;
+}
+.red{
+	position:absolute;
+	right:0.18rem;
+	top:0.28rem;
+	display:block;
+	width:0.14rem;
+	height:0.14rem;
+	background:#fc0303;
+	border-radius:0.05rem;
+}
+.size{
+	width:100%;
+	font-size:0.3rem;
+	text-align:center;
+	color:#fff;
+	margin-top:0.7rem;
+}
+.section-enter{
+    width:1.82rem;
+    height:0.64rem;
+    line-height:0.64rem;
+    border:1px solid #d6a41d;
+    border-radius:10px;
+    text-align:center;
+    margin:0.48rem 2.85rem 1.6rem 2.85rem;
+}
+.enter{
+	width:100%;
+	text-align:center;
+	display:block;
+	font-size:0.36rem;
+	color:#fff;
+}
+#content{
+	margin:0 auto;
+	width:100%;
+	margin-top:0.44rem;
+}
+ul{width:100%;}
+.cont{
+	border-top:2px solid #e6e6e6;
+	height:1rem;
+	line-height:1rem;
+	position:relative;
+}
+li.Set{
+	border:2px solid #e6e6e6;
+	height:1rem;
+	border-left:none;
+	border-right:none;
+}
+.location{
+	left:0.2rem;
+	top:0.25rem;
+}
+li i.active{	
+	background-position:-1.28rem 0rem;	
+}
+li i.coupon{	
+	background-position:-1.92rem 0rem;	
+}
+li i.heart{	
+	background-position:-2.56rem 0rem;	
+}
+li i.advice{
+	background-position:-3.20rem 0rem;
+}
+li i.smile{
+	background-position:-3.84rem 0rem;
+}
+li i.friend{
+	background-position:-4.48rem 0rem;
+}
+li i.about{
+	background-position:-5.12rem 0rem;
+}
+li i.set{
+	background-position:-5.76rem 0rem;
+}
+span.com-cont{
+	margin-left:0.8rem;
+	display:block;
+	font-size:0.26rem;
+	color:#333;
+	margin-top:0.1rem;
+}
+.right{
+	background-position:-6.40rem 0;
+	right:0.2rem;
+	top:0.25rem;
+}
+#smark{
+	position:absolute;
+	z-index: 3;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background:#000;
+	opacity:0.5;
+	display:none;
+}
+/*.share{
+	width:100%;
+	height:1.60rem;
+	background-color:#fff;
+	position:absolute;
+	bottom:-1.60rem;
+	left:0;
+	z-index: 3;
+	outline:none;
+}
+.weChart,.Friend,.Link,.Elipsis{
+	height:1.6rem;
+	width:24%;
+	border-right:1px solid #eee;
+	float:left;
+	text-align:center;
+}
+.Elipsis{border-right:none;}
+.same{
+	display:inline-block;
+	width:0.64rem;
+	height:0.56rem;
+	background:url(../images/shares-prite.png) no-repeat;
+	background-size:2.56rem 0.56rem;
+	/*margin-left: 0.6rem;
+}
+.wx{
+	background-position:0 0;
+}
+.circleFriend{
+	background-position:-0.64rem 0;
+}
+.link{
+	background-position:-1.28rem 0;
+}
+.ellipsis{
+	background-position:-1.92rem 0;
+}
+.word{
+	font-size:0.24rem;
+	color:#666;
+}*/
+.encourage{
+	width:6rem;
+	height:4.6rem;
+	background:#fff;
+	text-align:center;
+	border-radius:10px;
+	position:absolute;
+	left:0;
+	top:0;
+	bottom:0;
+	right:0;
+	margin:auto;
+	z-index:9;
+	display:none;
+}
+.plate{
+	display:block;
+	width:3.47rem;
+	height:2.58rem;
+	background:url(../images/pop-up_plate.png) no-repeat;
+	background-size:100% 100%;
+	margin:-1rem auto;
+}
+.like-online{
+	display:block;
+	font-size:0.26rem;
+	text-align:center;
+	margin:0 auto;
+}
+.on-line{	
+	color:#D6A41D;	
+	margin-top:1.2rem;
+}
+.like{
+	color:#333;
+	margin-top:0.5rem;
+}
+.pop-up{
+    overflow:auto;
+    margin:0 auto;
+    /* padding: 0 0.4rem; */
+    /* box-sizing: border-box; */
+    margin-left:0.5rem;
+    margin-top:0.5rem;
+}
+.gray-blue{
+	font-size:0.24rem;
+	display:inline-block;
+	width:2.28rem;
+	height:1rem;
+	line-height:0.9rem;
+	float:left;
+}
+.pop-gray{
+	background:url(../images/pop-up_gray.png) no-repeat;
+	background-size:100% 100%;	
+    margin-right:0.4rem;
+}
+.pop-blue{
+	background:url(../images/pop-up_blue.png) no-repeat;
+	background-size:100% 100%;
+}
+/*--------------------loading加载------------------------*/
+.loading{
+	width:100%;
+	position:absolute;
+	height:100%;
+	display:none;
+	z-index:99;
+	left:0;
+	top:0.88rem;
+	font-size:0.3rem;
+}
+.loading .middle{
+	width:100%;
+	position:absolute;
+	height:6rem;
+	text-align:center;
+	left:0;
+	top:0;
+	bottom:0;
+	right:0;
+	margin:auto;
+}
+.middle img{
+	width:2.1rem;
+	margin:0 auto;
+	margin-bottom:0.3rem;
+	display:block;
+}
+#wpReload{
+	color:#0AA1F8;
+}

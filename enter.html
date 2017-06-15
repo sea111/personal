@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="format-detection" content="telephone=no" />			
+		<title>正品控-登录</title>
+	</head>
+	<script>
+		document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + "px";
+		window.addEventListener("resize",function(){
+			document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + "px";
+		},false);	
+	</script>
+	<link rel="stylesheet" href="css/enter.css" />
+	<body>
+		<div id="box">
+			<!--star/end 头部标题-->
+			<div class="top">
+				<a href="javascript:;" class="bg-icon" id="back" onclick="window.history.go(-1)"></a>
+				<div>登陆</div>
+			</div>
+			<!--star 内容填写手机号验证码,微信登录-->
+			<div id="content">
+				<div class="common main">
+					<i class="bg-icon telephone"></i>
+					<input class="commons enter-phoneNumber" type="text" placeholder="请输入你的手机号" oninput="if(value.length>11)value=value.slice(0,11)"/>
+					<input class="verify-login verify" type="button" value="验证" id="verify"/>
+				</div>
+				<div class="common please-input">
+					<i class="bg-icon inp"></i>
+					<input class="commons authcode" id="authcode" type="text" placeholder="请输入验证码" oninput="if(value.length>4)value=value.slice(0,4)"/>
+				</div>
+				<div class="agreement">轻触上面的“登录”按钮，即表示你同意<a class="agree" href="javascript:;">&lt;&lt;正品控注册协议&gt;&gt;</a></div>
+				<p class="verify-login login">登陆</p>
+				<div class="account-number">
+					<i class="com-line line-left"></i>
+					<span class="use-account-number">或使用合作账号登陆</span>
+					<i class="com-line line-right"></i>
+				</div>
+				<div class="WeChart-sign"></div>
+			</div>
+			<!--end 内容填写手机号验证码,微信登录-->
+			<!--=================弹框================-->
+			<div id="smark"></div>
+			<div id="modal">
+				<div class="artile">
+					<p class="wifi">“正品控”想要打开“微信”</p>
+				</div>
+				<div class="and">
+					<a id="cancle" class="add-same">取消</a>
+					<a id="sure" class="add-same">打开</a>
+				</div>
+			</div>
+			<!--star 异常处理-->
+			<div class="loading">
+				<div class="middle"><img src="images/scan_net.png" />
+					<p>网络异常，点击
+						<a href="javascript:;" id="wpReload">重新加载</a>
+					</p>
+				</div>
+			</div>
+			<!--end 异常处理-->
+		</div>
+	</body>
+	<script type="text/javascript" src="lib/jquery-2.1.0.min.js" ></script>
+	<script type="text/javascript" src="lib/wpCommon.js" ></script>
+	<script>
+		$(function(){
+			$(".enter-phoneNumber").on("keyup",function(){
+				var value=$(this).val();
+				if((/^1[34578]\d{9}$/).test(value) && value.length==11){
+					$(".verify").css("background","#D6A41D")
+				}else{
+					$(".verify").css("background","#ccc")
+				}
+			})
+			$(".authcode").on("keyup",function(){
+				var value=$(this).val();
+				if((/^\d{4}$/).test(value)&&value.length==4){
+					$(".login").css("background","#D6A41D")
+				}else{
+					$(".login").css("background","#ccc")
+				}
+			})
+			//封装函数
+			function objFun(objClick,elements,showAddHide){
+				$(objClick).click(function(){
+					$(elements).css("display",showAddHide)
+				})
+			}
+			objFun(".login","#box","none");
+			objFun(".login","#boxs","block");
+			objFun(".WeChart-sign","#smark","block");
+			objFun(".WeChart-sign","#modal","block");
+			objFun("#cancle","#smark","none");
+			objFun("#cancle","#modal","none");
+/*			$(".login").click(function(){
+				$("#box").hide();
+				$("#boxs").show()
+			})
+			$(".WeChart-sign").click(function(){
+				$("#smark").show();
+				$("#modal").show();
+			})
+			$("#cancle").click(function(){
+				$("#smark").hide();
+				$("#modal").hide();
+			})*/
+		})	
+	</script>
+</html>

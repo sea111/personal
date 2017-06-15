@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />		
+		<meta name="format-detection" content="telephone=no" />			
+		<title>正品控-设置</title>
+	</head>
+	<style>
+		body, div, dl, dt, dd,ul,ol,li,h1,h2,h3,h4,h5,h6,
+		pre,form,fieldset,input,textarea,p,blockquote,th,td,
+		select,img{ margin: 0; padding:0;}
+		a{text-decoration:none;}
+		ul,li{list-style: none;}
+		b,strong{font-weight: normal;}
+		i,em{font-style: normal;}
+		.l{float:left;}
+		.r{float:right;}
+		html,body{
+			width:100%;
+			height:100%;
+			overflow:hidden;
+		}
+		#box{
+			width:100%;
+			height:100%;
+			margin:0 auto;
+		}
+		.top{
+			background:#333;
+			height:0.88rem;
+			line-height:0.88rem;
+		}
+		.bg-icon{
+			display:block;
+			background:url(images/back-icon.png) no-repeat;
+			background-size:100% 100%;
+			width:0.64rem;
+			height:0.64rem;
+			position:absolute;
+			left:0.1rem;
+			top:0.1rem;
+			-webkit-tap-highlight-color:rgba(255,0,0,0);
+		}
+		.top div{
+			width:100%;
+			height:0.88rem;
+			line-height:0.88rem;
+			font-size:0.36rem;
+			color:#fff;
+			text-align:center;	
+		}
+		#content{
+			width:100%;
+			height:100%;
+		}
+		.com-cont{
+			width:100%;
+			border-bottom:1px solid #ccc;
+			height:1rem;
+			position:relative;
+		}
+		.com-set{
+			float:left;
+			font-size:0.26rem;
+			line-height:1rem;
+			color:#333;
+			margin-left:0.2rem;
+		}
+		.local{
+			float:right;
+			font-size:0.26rem;
+			color:#333;
+			margin-right:0.4rem;
+			line-height:1rem;
+		}
+		.MB{
+			float:right;
+			font-size:0.26rem;
+			color:#333;
+			line-height:1rem;
+			margin-right:0.4rem;
+		}	
+		.icon-right{
+			display:block;
+			width:0.14rem;
+			height:0.28rem;
+			background:url(images/more_09.png) no-repeat;
+			background-size:100% 100%;
+			position:absolute;
+			right:0.2rem;
+			top:0.4rem;
+		}
+		/*--------------------loading加载------------------------*/
+		.loading{
+			width:100%;
+			position:absolute;
+			height:100%;
+			display:none;
+			z-index:99;
+			left:0;
+			top:0.88rem;
+			font-size:0.3rem;
+		}
+		.loading .middle{
+			width:100%;
+			position:absolute;
+			height:6rem;
+			text-align:center;
+			left:0;
+			top:0;
+			bottom:0;
+			right:0;
+			margin:auto;
+		}
+		.middle img{
+			width:2.1rem;
+			margin:0 auto;
+			margin-bottom:0.3rem;
+			display:block;
+		}
+		#wpReload{
+			color:#0AA1F8;
+		}
+	</style>
+	<script type="text/javascript">
+		//rem
+		document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + "px";
+		window.addEventListener("resize",function(){
+			document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + "px";
+		},false);
+	</script>
+	<body>
+		<div id="box">
+			<!--star 头部标题-->
+			<div class="top">
+				<a href="javascript:;"class="bg-icon back" id="back" onclick="window.history.go(-1)"></a>
+				<div>设置</div>
+			</div>
+			<!--end 头部标题-->
+			<div id="content">
+				<ul class="com-cont feedback">
+					<li class="com-set advice">意见反馈<i class="icon-right"></i></li>
+				</ul>
+				<ul class="com-cont aboutzpk">
+					<li class="com-set about">关于正品控<i class="icon-right"></i></li>
+				</ul>
+				<ul class="com-cont">
+					<li class="com-set information">版本信息</li>
+					<li class="local">当前版本号：3.5.0</li>
+				</ul>
+				<ul class="com-cont">
+					<li class="com-set cache">缓存</li>
+					<li class="MB">0.1MB</li>
+				</ul>
+			</div>
+			<div class="loading">
+				<div class="middle"><img src="images/scan_net.png" />
+					<p>网络异常，点击
+						<a href="javascript:;" id="wpReload">重新加载</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="lib/jquery-2.1.0.min.js" ></script>
+	<script type="text/javascript" src="lib/wpCommon.js" ></script>
+	<script type="text/javascript">
+		$(".feedback").click(function(){
+			window.location.href="feedback.html"
+		})
+		$(".aboutzpk").click(function(){
+			window.location.href="about.html"
+		})
+	</script>
+</html>
